@@ -116,9 +116,9 @@ def load_and_propagate_dvfs(
     return dvfs, dvfs_ct
 
 if __name__ == "__main__":
-    if APPLICATION == "C_4D_MR_CASES":
+    if APPLICATION == "A_4D_CT":
         cases = A_4D_CT_CASES
-    elif APPLICATION == "B_4D_MR_CASES":
+    elif APPLICATION == "B_4D_MR":
         cases = B_4D_MR_CASES
     else: 
         cases = C_4D_MR_CASES
@@ -143,3 +143,4 @@ if __name__ == "__main__":
             f.write(f"{APPLICATION},{cid}, avg time to generate a 3D cine image, {avg_cine}\n")
             print("Processing complete.\n")
   
+
